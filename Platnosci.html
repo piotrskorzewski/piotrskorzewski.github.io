@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Płatności</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Moja Strona</h1>
+    <nav>
+      <a href="index.html"><img src="logo3.png" alt="Logo" class="logo"></a>
+      <a href="index.html">Start</a>
+      <a href="o-mnie.html">O mnie</a>
+      <a href="adres.html">Adres</a>
+      <a href="platnosci.html">Płatności</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Opłać usługę</h2>
+    <p>Kwota: <strong>500 zł</strong></p>
+
+    <!-- PayPal -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="TWÓJ_EMAIL_PAYPAL">
+      <input type="hidden" name="item_name" value="Usługa XYZ">
+      <input type="hidden" name="amount" value="500">
+      <input type="hidden" name="currency_code" value="PLN">
+      <input type="submit" value="Zapłać 500 zł PayPal/Karta" class="pay-btn">
+    </form>
+
+    <br>
+
+    <!-- Przelewy24 / PayU / Tpay -->
+    <a href="https://secure.przelewy24.pl/trnRequest/XXXX" target="_blank">
+      <button class="pay-btn">Zapłać 500 zł (BLIK/Karta/Przelew)</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Moja Strona</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Moja Strona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="skorzewskipiotr@wp.pl">
+  <input type="hidden" name="item_name" value="Moja usługa">
+  <input type="hidden" name="amount" value="500">
+  <input type="hidden" name="currency_code" value="PLN">
+  <input type="submit" value="Zapłać 500 zł PayPal/Karta" style="padding:10px 20px; font-size:16px;">
+</form>
+<p>
+    
+    Płatność kartą, BLIK, przelew bankowy<br>
+
+Do tego musisz użyć polskich operatorów płatności:<br>
+
+Przelewy24,
+
+PayU,
+
+tpay,
+
+Stripe,
+ (obsługuje też BLIK w PL).
+ <br>
+👉 Zasada:
+    Zakładasz konto u operatora.<br>
+
+    Dostajesz link lub przycisk płatności (można ustawić konkretną kwotę np. 500 zł).<br>
+    
+    Wklejasz ten link w swoją stronę jako przycisk "Zapłać 500 zł"</p>
+</body>

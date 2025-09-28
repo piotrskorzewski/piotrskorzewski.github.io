@@ -1,0 +1,6 @@
+# Ignoruj pliki systemowe
+.DS_Store
+Thumbs.db
+#adres strony na git https://piotrskorzewski.github.io/moja-strona
+
+ 
